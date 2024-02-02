@@ -19,7 +19,7 @@ pipeline{
                 }
              
            }
-         stage('build and sonarqube analysis'){
+         stage('build '){
              steps {
                 script {
                        withSonarQubeEnv('sonarqube'){
