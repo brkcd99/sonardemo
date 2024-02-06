@@ -10,6 +10,9 @@ currentBuild.displayName = "Final_Demo # "+currentBuild.number
 
 pipeline{
     agent any 
+    tools {
+        Local_Maven ' apache-maven-3.6.3 '
+         }
     stages {
          stage('build and sonarqube analysis'){
              steps {
