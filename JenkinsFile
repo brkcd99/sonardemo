@@ -11,7 +11,7 @@ currentBuild.displayName = "Final_Demo # "+currentBuild.number
 pipeline{
     agent any 
     tools {
-        Maven 'Local_Maven'
+        maven 'Local_Maven'
          }
     stages {
          stage('build and sonarqube analysis'){
