@@ -18,8 +18,8 @@ pipeline{
              steps {
                 script {
                        withSonarQubeEnv('sonarqube'){
-                         //sh 'mvn clean package sonar:sonar' 
-                           sh 'mvn --version'
+                          sh 'mvn clean package sonar:sonar' 
+                         // sh 'mvn --version'
                 }
              }
            }
