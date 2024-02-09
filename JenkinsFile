@@ -19,6 +19,7 @@ pipeline{
                 script {
                        withSonarQubeEnv('sonarqube'){
                           sh 'mvn clean package sonar:sonar' 
+                          sh 'echo ${getDockerTag()}'
                          // sh 'mvn --version'
                 }
              }
